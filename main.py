@@ -55,12 +55,7 @@ import plots
 import predict
 
 
-pages_dict = {
-                "Home": home,
-                "View Data": data,
-                "Visualise Data": plots,
-                "Predict": predict
-            }
+pages_dict = {"Home": home,"View Data": data,"Visualise Data": plots,"Predict": predict}
 
 st.sidebar.title('Navigation')
 user_choice = st.sidebar.radio("Go to", tuple(pages_dict.keys()))
